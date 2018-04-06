@@ -1,0 +1,74 @@
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.jumbotron {
+    margin-top: 2%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+    
+}
+
+#jumbo {
+    background: rgba(50, 50, 50, 0.8);
+    border: 4px solid white;
+    color: white;
+    border-radius: 20px;
+    font-size: 40px;
+}
+
+#main-heading {
+    font-size: 60px;
+    margin-top: -1%;
+}
+
+#secondary-heading {
+    font-size: 32px;
+    margin-bottom: -1%;
+    margin-top: -1%;
+}
+
+#schedule-main {
+    padding: 1%;;
+    
+}
+
+#form-panel {
+    padding: 0;
+}
+
+
+.form-group {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    color: white;
+}
+
+.panel-default>.panel-heading {
+    color: white;
+    font-size: 20px;
+}
+
+#form-panel {
+    background: rgba(50,50,50, 0.8);
+
+}
+
+.table {
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+#train-table-body {
+    margin-right: 2%;
+}
+
+table.thead {
+    font-size: 28px;
+}
