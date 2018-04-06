@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Scheduler - Fernando Zacarias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- moment.js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/af.js"></script>
+    <link href="assets/hover.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">    
+</head>
+<body>
+    <div class="container jumbotron">
+        <h1 id="main-heading">Anytime is Train Time</h1>
+        <p id="secondary-heading">Choo Choo!  Chee Chee!</p>
+    </div>
+
+    <div class="container panel panel-default" id="schedule-main">
+        <div class="panel-heading">Current Train Schedule</div>
+        <!-- Schedule Table -->
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="train-table-body">
+                <tr>
+                    <td class="train1"></td>
+                    <td class="train2"></td>
+                    <td class="train3"></td>
+                    <td class="train4"></td>
+                    <td class="train5"></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="container panel panel-default" id="form-panel">
+        <div class="panel-heading">Add Train</div>
+        <!-- Sign-up Form (note the various input "types")-->
+        <form role="form">
+            <div class="form-group">
+                <label for="name-input">Train Name:</label>
+                <input class="form-control" id="name-input" type="text">
+            </div>
+            <div class="form-group">
+                <label for="email-input">Destination:</label>
+                <input class="form-control" id="destination-input" type="text">
+            </div>
+            <div class="form-group">
+                <label for="age-input">First Train Time (HH:mm--military time):</label>
+                <input class="form-control" id="first-train-input" type="text">
+            </div>
+            <div class="form-group">
+                <label for="comment-input">Frequency (min):</label>
+                <input class="form-control" id="frequency-input" type="number">
+            </div>
+            <button class="btn btn-default" id="addSubmit" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
